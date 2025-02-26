@@ -19,7 +19,7 @@
         <h2 class="title">타마</h2>
         <hr />
         <section>
-          <h3 class="subtitle">자기소개</h3>
+          <h3 class="subtitle" id="self-introduction">자기소개</h3>
           <p>
             안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 크론이에요. 안정적인 삶에서 벗어나 세 번의
             큰 전환점을 겪으며 지금의 제가 되었어요. 어제보다 더 나은 오늘의 나를 만들기 위해 노력하고 있죠. 매일의 작은
@@ -30,14 +30,14 @@
         </section>
 
         <section>
-          <h3 class = "subtitle">나만의 갤러리</h3>
+          <h3 class = "subtitle" id="my-gallery">나만의 갤러리</h3>
           <h4>내가 좋아하는 것들</h4>
 
             <div class="grid-container">
               <img src="./images/hangyodon.jpg">
-              <img src="./images/doran.jpg">
-              <img src="./images/lotko.jpg">
               <img src="./images/shotaro.jpeg">
+              <img src="./images/lotko.jpg">
+              <img src="./images/doran.jpg">
               <img src="./images/tokyo.jpeg">
               <img src="./images/rockbear.jpeg">
               <img src="./images/vintage.jpeg">
@@ -47,7 +47,7 @@
         </section>
 
         <section>
-          <h3 class="subtitle">나를 울린 인생 작품</h3>
+          <h3 class="subtitle" id="favorite-things">나를 울린 인생 작품</h3>
           <article>
             <h4>인생 영화</h4>
             <div class="thumbnail">
@@ -91,7 +91,9 @@
         </section>
 
         <section>
-          <form class="comment">
+          <br>
+          <h4>댓글</h4>
+          <form class="comment" id="comment">
             <img src="images/comment-author-icon.png"/>
             <input
                     type="text"
@@ -121,16 +123,16 @@
           <h2>Contents</h2>
           <ol class="contents">
             <li>
-              <a href="#">자기소개</a>
+              <a href="#self-introduction">자기소개</a>
             </li>
             <li>
-              <a href="#">나만의 갤러리</a>
+              <a href="#my-gallery">나만의 갤러리</a>
             </li>
             <li>
-              <a href="#">나를 울린 인생 작품</a>
+              <a href="#favorite-things">나를 울린 인생 작품</a>
             </li>
             <li>
-              <a href="#">감상평</a>
+              <a href="#comment">댓글</a>
             </li>
           </ol>
         </nav>

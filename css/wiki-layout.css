@@ -39,6 +39,7 @@ h1.logo span.text {
 }
 
 main {
+  background-color: #F5F5F7;
   padding: var(--page-padding);
 }
 
@@ -120,7 +121,7 @@ aside h2 {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 500px;
 }
 .comment {
   bottom: 0;
@@ -136,7 +137,7 @@ aside h2 {
   flex: 1;
   padding: 8px;
   font-size: 14px;
-  border: 1px solid #fface4;
+  border: 1px solid #EDDFE0;
   border-radius: 5px;
 }
 .button-group {
@@ -152,8 +153,7 @@ aside h2 {
 }
 
 .submit-btn {
-  background: #fface4;
-  color: white;
+  background: #EDDFE0;
 }
 
 .reset-btn {
@@ -220,11 +220,11 @@ footer p {
   --right-sidebar-padding: 32px;
 
   --header-width: 235px;
-  --header-bg-color: #f6f6f6;
+  --header-bg-color: #EDDFE0;
 
   --aside-width: 350px;
-  --aside-bg-color: #f6f6f6;
+  --aside-bg-color: #EDDFE0;
 
-  --divider-color: #efefef;
-  --font-default-color: #333;
+  --divider-color: #cccccc;
+  --font-default-color: #705C53;
 }
