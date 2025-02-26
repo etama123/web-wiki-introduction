@@ -168,6 +168,7 @@ aside h2 {
   background-color: #f9f9f9;
   border-radius: 5px;
   border: 1px solid #ddd;
+  position: relative;
 }
 
 .comment-item img {
@@ -176,12 +177,29 @@ aside h2 {
   border-radius: 50%;
   margin-right: 10px;
 }
-
+.comment-item .author-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 .comment-item .comment-text {
   background-color: #f4f4f4;
   padding: 10px;
   border-radius: 5px;
   max-width: 80%;
+  margin-top: 5px;
+}
+.delete-comment{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  background-color: #705C53;
+  color: #EDDFE0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
 }
 aside.right-sidebar nav {
   padding: var(--right-sidebar-padding);

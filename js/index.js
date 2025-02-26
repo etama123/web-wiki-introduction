@@ -35,9 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const commentItem = document.createElement("li");
         commentItem.classList.add("comment-item");
 
-        const authorIcon = document.createElement("div");
-        authorIcon.classList.add("comment-author-icon");
-        authorIcon.style.backgroundImage = "url('./images/comment-author-icon.png')";
+        const visitorName = "방문자";
+
+        const authorIcon = document.createElement("img");
+        authorIcon.src = "./images/comment-author-icon.png";
+        authorIcon.alt = "사용자 프로필 이미지";
 
         const commentContent = document.createElement("span");
         commentContent.classList.add("comment-content");
@@ -51,9 +53,15 @@ document.addEventListener("DOMContentLoaded", function () {
             commentItem.remove();
         });
 
+        const nameElement = document.createElement("span");
+        nameElement.classList.add("author-name");
+        nameElement.textContent = visitorName;
+
         commentItem.appendChild(authorIcon);
+        commentItem.appendChild(nameElement)
         commentItem.appendChild(commentContent);
         commentItem.appendChild(deleteButton);
+
         commentList.appendChild(commentItem);
 
         commentInput.value = "";
