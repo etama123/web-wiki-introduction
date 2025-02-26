@@ -107,6 +107,21 @@ aside h2 {
   text-indent: -1000rem;
 }
 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0;
+  width: 100%;
+  height: 100%;
+}
+.grid-container img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 5px;
+}
 aside.right-sidebar nav {
   padding: var(--right-sidebar-padding);
 }
